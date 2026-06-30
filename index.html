@@ -3,73 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BoatNav - Sicherheit auf dem Wasser</title>
+    <title>Blume Media IT</title>
     <style>
-        body { font-family: 'Helvetica Neue', Arial, sans-serif; margin: 0; text-align: center; background: #0f2027; color: white; background: linear-gradient(to bottom, #2c5364, #203a43, #0f2027); min-height: 100vh; }
-        header { padding: 80px 20px; }
-        h1 { font-size: 3.5em; margin-bottom: 10px; letter-spacing: 2px; }
-        .tagline { font-size: 1.2em; opacity: 0.8; margin-bottom: 40px; }
-        .btn { background: #00d2ff; background: linear-gradient(to right, #3a7bd5, #00d2ff); color: white; padding: 18px 40px; text-decoration: none; border-radius: 50px; font-weight: bold; display: inline-block; box-shadow: 0 4px 15px rgba(0,210,255,0.3); transition: 0.3s; font-size: 1.1em; }
-        .btn:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(0,210,255,0.5); }
-        .container { max-width: 900px; margin: auto; padding: 50px 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
-        .feature { background: rgba(255, 255, 255, 0.05); padding: 30px; border-radius: 20px; border: 1px solid rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); }
-        .feature h3 { color: #00d2ff; margin-top: 0; }
-        footer { padding: 40px; font-size: 0.9em; opacity: 0.6; }
-        .version { color: #aaa; margin-top: 10px; display: block; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #2c3e50;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            background: #34495e;
+            padding: 0.5rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            display: inline-block;
+        }
+        nav a:hover {
+            background: #1abc9c;
+            border-radius: 4px;
+        }
+        .container {
+            width: 80%;
+            margin: 2rem auto;
+            overflow: hidden;
+        }
+        section {
+            background: #fff;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        .app-card {
+            border: 1px solid #ddd;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 5px;
+        }
+        .app-status {
+            font-style: italic;
+            color: #7f8c8d;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #2c3e50;
+            color: #fff;
+            margin-top: 2rem;
+        }
     </style>
 </head>
 <body>
-    <header>
-        <h1>BoatNav</h1>
-        <p class="tagline">Die moderne Sicherheits-App für Wassersportler</p>
-        <a href="BoatNav-Release.apk" class="btn">📥 KOSTENLOS HERUNTERLADEN</a>
-        <span class="version">Version 1.0 (Android APK, früheste Android Version: Android 14)</span>
-    </header>
 
-    <section style="text-align: left; background: rgba(255, 255, 255, 0.05); border-radius: 20px; padding: 30px; margin-top: 30px; border: 1px solid rgba(0, 210, 255, 0.2);">
-        <h3 style="color: #00d2ff; text-align: center;">📲 So installierst du BoatNav</h3>
-        <ol style="line-height: 1.8; padding-left: 20px;">
-            <li><strong>Herunterladen:</strong> Klicke oben auf den Download-Button. Dein Browser fragt eventuell: <em>"Datei könnte schädlich sein"</em>. Wähle <strong>"Trotzdem herunterladen"</strong>.</li>
-            <li><strong>Datei öffnen:</strong> Klicke nach dem Download in der Benachrichtigung oder im Browser-Menü auf <strong>"Öffnen"</strong>.</li>
-            <li><strong>Einstellungen anpassen:</strong> Falls dein Handy sagt <em>"Installation blockiert"</em>, klicke auf <strong>"Einstellungen"</strong> und aktiviere den Schalter bei <strong>"Dieser Quelle vertrauen"</strong> (oder <em>"Aus dieser Quelle installieren"</em>).</li>
-            <li><strong>Installieren:</strong> Gehe zurück zur App und klicke auf <strong>"Installieren"</strong>.</li>
-            <li><strong>Google Play Protect:</strong> Es könnte noch einer Meldung von Google Play Protect wegen <strong>"App wurde zum Schutz deines Geräts blokiert"</strong> anzeigt werden, diese Meldung können Sie aber ruhig ignorieren, indem Sie auf <strong>"Weitere Deteils"</strong> tippen und dann auf <strong>"Trotzdem installieren"</strong>.</strong></li>
-            <li><strong>Starten:</strong> Öffne BoatNav, akzeptiere die AGB (bitte sorgfältig lesen!) und genieße die Fahrt! 🛥️</li>
-        </ol>
-        <p style="font-size: 0.85em; opacity: 0.7; text-align: center; margin-top: 20px;">
-            <em>Hinweis: Diese Schritte sind bei Android für alle Apps notwendig, die nicht direkt aus dem Play Store geladen werden.</em>
-        </p>
-    </section>
-    <div class="container">
-        <div class="feature">
-            <h3>🚨 Echtzeit-Notrufe</h3>
-            <p>Melde Gefahren wie Feuer oder dringend benötigte medizinische Hilfe und warne alle App-User in deiner Umgebung (innerhalb eines 1 KM Radius) sofort.</p>
-        </div>
-        <div class="feature">
-            <h3>📡 Radar-Ansicht</h3>
-            <p>Sieh andere Nutzer im Umkreis von 7,5 km auf deinem persönlichen Radar (Test-Feature).</p>
-        </div>
-        <div class="feature">
-            <h3>🧭 Navigation</h3>
-            <p>Integrierte Kreuzpeilung und OSM-Seekarten für eine sichere Fahrt auf allen Gewässern.</p>
-        </div>
-        <div class="feature">
-            <h3> In-App-Käufe (Test-Version)</h3>
-            <p>Hinweis: In der App gibt es ein Währungssystem, womit Sie neue appeigene Währung kaufen können, um die Radar-Ansicht zu nutzen (Sie haben 2x Gratis Radar-Ansicht).</p>
-        </div>
-    </div>
-    <section style="background: rgba(0, 210, 255, 0.1); border-radius: 20px; padding: 20px; margin-top: 30px;">
-        <h3>🛡️ Sicherheit & Installation</h3>
-        <p style="font-size: 0.9em; line-height: 1.6;">
-            Da BoatNav direkt als APK verteilt wird, zeigt Android eine Sicherheitswarnung. 
-            Dies ist normal für Apps außerhalb des Play Stores. Die App ist <strong>garantiert frei von Schadsoftware</strong> 
-            und sammelt nur die Daten, die für die Funktionen notwendig sind.
-        </p>
+<header>
+    <h1>Blume Media IT</h1>
+</header>
+
+<nav>
+    <a href="#home">Startseite</a>
+    <a href="#apps">Unsere Apps</a>
+    <a href="#blog">Blog</a>
+    <a href="#about">Über uns</a>
+    <a href="#contact">Kontakt</a>
+</nav>
+
+<div class="container">
+    <section id="home">
+        <h2>Willkommen bei Blume Media IT</h2>
+        <p>Ihr Partner für innovative App-Entwicklung und IT-Lösungen.</p>
     </section>
 
-    <footer>
-        <p>Entwickelt von Seglern für Segler.</p>
-        <p>&copy; 2026 BoatNav Projekt. Alle Rechte vorbehalten.</p>
-    </footer>
+    <section id="apps">
+        <h2>Unsere Apps</h2>
+
+        <div class="app-card">
+            <h3>BoatNav</h3>
+            <p>Die ultimative Navigationshilfe für Bootfahrer. Sicherheit und Orientierung auf dem Wasser.</p>
+        </div>
+
+        <div class="app-card">
+            <h3>App 2</h3>
+            <p class="app-status">Demnächst verfügbar</p>
+            <p>Wir arbeiten an etwas Spannendem. Bleiben Sie gespannt!</p>
+        </div>
+
+        <div class="app-card">
+            <h3>App 3</h3>
+            <p class="app-status">Reserviert</p>
+            <p>Zukünftiges Projekt in Planung.</p>
+        </div>
+    </section>
+
+    <section id="blog">
+        <h2>Blog / Entwicklungsupdates</h2>
+        <article>
+            <h3>Update: BoatNav Version 1.0 stabil</h3>
+            <p><small>Veröffentlicht am 24. Mai 2024</small></p>
+            <p>Wir freuen uns, den erfolgreichen Launch der BoatNav App bekannt zu geben...</p>
+        </article>
+    </section>
+
+    <section id="about">
+        <h2>Über uns</h2>
+        <p>Blume Media IT steht für Qualität und Leidenschaft in der Softwareentwicklung. Unser Fokus liegt auf benutzerfreundlichen Anwendungen, die echten Mehrwert bieten.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Kontakt</h2>
+        <p>Haben Sie Fragen oder Interesse an einer Zusammenarbeit? Schreiben Sie uns!</p>
+        <p>E-Mail: kontakt@blume-media-it.de</p>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 Blume Media IT. Alle Rechte vorbehalten.</p>
+</footer>
+
 </body>
 </html>
