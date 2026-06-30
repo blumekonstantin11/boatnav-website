@@ -66,7 +66,7 @@
         }
 
         header h1 {
-            font-size: 3rem;
+            font-size: clamp(2rem, 8vw, 3.5rem);
             font-weight: 800;
             letter-spacing: -1px;
             background: linear-gradient(to right, #fff, #cbd5e1);
@@ -230,9 +230,59 @@
         }
 
         @media (max-width: 768px) {
-            header h1 { font-size: 2rem; }
-            .header-content { flex-direction: column; }
-            section { padding: 2rem; }
+            header { padding: 3rem 1rem; }
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+            header img { height: 100px; }
+
+            nav {
+                flex-wrap: wrap;
+                padding: 0.5rem;
+                gap: 5px;
+            }
+            nav a {
+                padding: 0.4rem 0.8rem;
+                margin: 0;
+                font-size: 0.85rem;
+                flex: 1 1 40%;
+                text-align: center;
+            }
+
+            .container {
+                margin: 2rem auto;
+                padding: 0 1rem;
+            }
+            section {
+                padding: 1.5rem;
+                margin-bottom: 2rem;
+                border-radius: 20px;
+                text-align: center;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+                display: inline-block;
+            }
+            h2::after {
+                left: 50%;
+                transform: translateX(-50%);
+                width: 40px;
+            }
+
+            .app-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .app-card { padding: 1.5rem; }
+
+            .blog-post {
+                padding-left: 0;
+                border-left: none;
+                border-top: 3px solid var(--primary-blue);
+                padding-top: 1rem;
+            }
         }
     </style>
 </head>
